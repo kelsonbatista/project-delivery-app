@@ -32,3 +32,13 @@ This is an On demand delivery app as the final full stack project. The app cover
 # Deployment / *Implantação*
 
 See it in action/ **Veja em ação**: [https://github.com/kelsonbatista/project-delivery-app/](https://kelsonbatista.github.io/project-delivery-app/)
+
+Commands:
+
+- git clone git@github.com:kelsonbatista/project-delivery-app.git
+- Run npm install in / , and /front-end and /back-end
+- Run database inside Docker: in / run "docker compose:up:dev
+- In /back-end run "npm run dev"
+- In /back-end run "npm run db:reset" to seed basic information into db
+- In /front-end run "npm start"
+- Access http://localhost:3000, register a new user, ready to go.

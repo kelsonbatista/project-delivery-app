@@ -12,7 +12,7 @@ import './index.css';
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={ store }>
-      <BrowserRouter basename="/project-delivery-app">
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </Provider>
