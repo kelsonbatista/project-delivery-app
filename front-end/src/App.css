@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Han+Sans&family=Changa+One:ital@1&family=Jocke+One&family=Neonderthaw&family=Pacifico&family=Poppins:ital,wght@1,800&family=Shrikhand&family=Suez+One&family=Titan+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply bg-gray-100 !important;
+  }
+
+  a {
+    @apply hover:text-orange-600 text-black !important;
+  }
+
+  .home {
+    @apply w-screen h-screen flex justify-center items-center;
+  }
+
+  .home__left {
+    @apply hidden md:block md:h-screen md:w-screen bg-cover bg-center md:bg-[url('../src/images/banner3.png')] lg:bg-[url('../src/images/banner1.png')];
+  }
+
+  .home__right {
+    @apply flex flex-col justify-start items-center w-[700px] h-screen;
+  }
+
+  .home__logo-image {
+    @apply w-[200px];
+  }
+
+  .home__logo-title {
+    @apply mb-10 font-['Pacifico'] text-6xl stroke-orange-500 stroke-2;
+  }
+
+  .home__logo {
+    @apply h-[100%] flex flex-col justify-end mb-[10px];
+  }
+
+  .home__login {
+    @apply flex justify-start h-[100%];
+  }
+
+  .form__input {
+    @apply block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-400 rounded transition ease-in-out m-0 focus:text-gray-700 focus:border-2 focus:ring-2 focus:bg-white focus:border-blue-600 focus:outline-none h-[40px];
+  }
+
+  .form__button {
+    @apply bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded !important;
+  }
+
+  .form__correct {
+    @apply focus:border-2 focus:ring-2 focus:bg-white focus:border-green-600 focus:ring-green-200 focus:outline-none !important;
+  }
+
+  .form__error {
+    @apply focus:border-2 focus:ring-2 focus:bg-white focus:border-red-600 focus:ring-red-200 focus:outline-none !important;
+  }
+
+  .form__error-msg {
+    @apply text-red-500 text-sm italic my-1;
+  }
+
+  .body__title1 {
+    @apply text-3xl font-extrabold text-center text-gray-800 dark:text-gray-200;
+  }
+
+  .body__title2 {
+    @apply text-2xl sm:text-3xl md:text-4xl mt-9 font-extrabold text-gray-800 dark:text-gray-200;
+  }
+
+  .body__title3 {
+    @apply text-lg sm:text-xl md:text-2xl font-extrabold text-gray-800 dark:text-gray-200;
+  }
+
+  .body__text1 {
+    @apply max-w-6xl mx-auto mt-4 text-base text-center text-gray-500 dark:text-gray-400 md:text-lg;
+  }
+
+  .body__screen {
+    @apply w-[90vw] xl:w-[80vw];
+  }
+
+  .header {
+    @apply h-[100px] top-0 bg-yellow-400 fixed z-10 w-screen flex justify-between items-center;
+  }
+
+  .header__brand {
+    @apply w-[300px] min-w-[200px] flex items-center;
+  }
+
+  .header__logo {
+    @apply h-[80px] ml-5;
+  }
+
+  .header__title {
+    @apply text-5xl font-['Pacifico'];
+  }
+
+  .header__nav {
+    @apply hidden w-screen ml-10 font-extrabold md:flex justify-end hover:text-orange-500 text-black !important;
+  }
+
+  .header__menu-hamburguer {
+    @apply sm:hidden text-3xl;
+  }
+
+  .header__menu-dropdown {
+    @apply hidden sm:block;
+  }
+
+  .header__dropdown {
+    @apply mr-10 ml-10;
+  }
+
+  .header__item {
+    @apply block md:hidden;
+  }
+
+  .product {
+    @apply text-center flex flex-wrap justify-around w-[90vw] mx-auto;
+  }
+
+  .product__card {
+    @apply w-[300px] mb-8 border-gray-400 border-2 rounded-2xl;
+  }
+
+  .product__price {
+    @apply bg-green-600 w-[80px] p-2 ml-[-2px] mt-[-2px] rounded-tl-2xl text-center font-extrabold text-xl text-white;
+  }
+
+  .product__image {
+    @apply min-h-[150px] h-[200px] w-auto m-auto;
+  }
+
+  .product__title {
+    @apply text-xl my-3;
+  }
+
+  .product__quantity {
+    @apply m-auto text-center my-5;
+  }
+
+  .product__btn {
+    @apply bg-blue-700 w-[40px] h-[40px] text-white text-2xl !important;
+  }
+
+  .product__btn-left {
+    @apply rounded-l-3xl
+  }
+
+  .product__btn-right {
+    @apply rounded-r-3xl
+  }
+
+  .product__input {
+    @apply w-[30%] text-center border-2 border-gray-400 h-[40px] pl-3 text-xl;
+  }
+
+  .product__cart {
+    @apply bg-green-600 text-3xl p-5 top-[120px] right-0 rounded-l-3xl text-yellow-300 fixed flex font-extrabold !important;
+  }
+
+  .product__cart-icon {
+    @apply mr-5 font-extrabold;
+  }
+
+  .product__table-header {
+    @apply text-sm h-[60px] sm:text-base md:text-lg flex items-center justify-center font-extrabold border-t-2 border-b-2 border-black;
+  }
+
+  .product__table-body {
+    @apply text-sm h-[60px] sm:text-base md:text-lg flex items-center justify-center border-b-[1px] border-gray-500;
+  }
+
+  .product__total {
+    @apply bg-black flex items-center font-extrabold text-white h-[35px] sm:h-[42px] md:h-[50px] px-5 sm:text-lg md:text-2xl;
+  }
+
+  .address {
+    @apply border-t-2 border-gray-400 pt-3;
+  }
+
+  .address__form {
+    @apply mt-[20px] mb-[200px];
+  }
+
+  .address__form-group {
+    @apply flex flex-col md:flex-row justify-between w-[100%];
+  }
+
+  .address__form-bottom {
+    @apply flex justify-center mt-3;
+  }
+
+  .address__button {
+    @apply w-[300px] h-[60px] mb-[150px] bg-orange-600 hover:bg-orange-700 rounded text-white text-xl mt-5 !important;
+  }
+
+  .orders__list {
+    @apply flex flex-wrap justify-around;
+  }
+
+  .order__card {
+    @apply flex justify-around items-center text-center w-[360px] h-[100px] border-2 border-gray-300 shadow-md shadow-gray-600 mb-6 font-extrabold rounded-2xl;
+  }
+
+  .order__status {
+    @apply text-xl uppercase p-6 font-extrabold rounded-md;
+  }
+
+  .order__column {
+    @apply flex flex-col justify-between h-[65px];
+  }
+
+  .order__link {
+    @apply no-underline decoration-inherit hover:decoration-inherit text-black hover:text-black;
+  }
+
+  .cian {
+    @apply bg-blue-500;
+  }
+
+  .warning {
+    @apply bg-yellow-500;
+  }
+
+  .green {
+    @apply bg-green-500;
+  }
+
+  .admin__form {
+    @apply mt-3;
+  }
+
+  .admin__form-group {
+    @apply flex flex-col md:flex-row justify-between;
+  }
+  
+  .admin__button {
+    @apply w-[97%] md:w-[120px] h-[40px] bg-orange-600 hover:bg-orange-800 rounded text-white text-xl !important;
+  }
+}
+
+/* .App {
+  align-items: center;
+  background: #0fa36b;
+  color: #464646;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.App > .logo {
+  animation: shake 1.5s infinite ease;
+  color: aliceblue;
+  font-family: Montserrat , sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.rocksGlass {
+  animation: shake 1s infinite ease;
+  max-height: 80vh;
+}
+
+@keyframes shake {
+
+  0% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes clink {
+
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+*/
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
