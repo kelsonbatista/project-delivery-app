@@ -31,7 +31,6 @@
   "bugs": {
     "url": "https://github.com/betrybe/sd-0x-project-delivery-app/issues"
   },
-  "homepage": "https://kelsonbatista.github.io/project-delivery-app",
   "devDependencies": {
     "@faker-js/faker": "6.0.0",
     "axios": "0.26.1",
