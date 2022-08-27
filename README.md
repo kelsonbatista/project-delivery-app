@@ -31,7 +31,7 @@ This is an On demand delivery app as the final full stack project. The app cover
 ---
 # Deployment / *Implantação*
 
-See it in action/ **Veja em ação**: [https://github.com/kelsonbatista/project-delivery-app/](https://kelsonbatista.github.io/project-delivery-app/)
+See it in action/ **Veja em ação**: [https://project-delivery-app-front.vercel.app/](https://project-delivery-app-front.vercel.app/)
 
 Commands:
 
